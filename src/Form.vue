@@ -25,7 +25,7 @@ const prioritySet = ref([
 ])
 
 const init = () => {
-    console.log("123")
+    
     if (!priority.value) {
         priorityText = ref(null)
     } else {

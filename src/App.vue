@@ -6,7 +6,7 @@ import Form from './Form.vue';
 import NoteList from './NoteList.vue'
 const title = ref("")
 const content = ref("")
-const priority =ref(1)
+const priority =ref(null)
 let id = 0
 const notes = ref([
     {

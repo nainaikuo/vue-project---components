@@ -4,12 +4,10 @@ const props = defineProps(["initialValue","options","id"])
 const value = defineModel("value")
 const text  = defineModel("text")
 const isOpen = ref(false)
-console.log(text.value)
 const selected = ref({
     text:text,
     value:value
 })
-console.log(selected.value.text)
 const toggleSubmenu = ()=>{
     isOpen.value = !isOpen.value
 }
