@@ -30,6 +30,9 @@ input{
     color: #333;
     flex: 1;
 }
+input::placeholder{
+    color: red;
+}
 input:focus{
     outline:0.5px solid #555;
 }

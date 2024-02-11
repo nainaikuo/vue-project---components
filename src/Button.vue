@@ -2,13 +2,15 @@
 <script setup>
 
 import {ref} from 'vue'
-defineProps(["text","value","color","type","size"])
+defineProps(["value","color","type","size"])
 
 </script>
 
 <template>
 
-<button :class="[color,type,size]" :value="value" > {{ text }}   </button>
+<button :class="[color,type,size]" :value="value" >
+    <slot></slot>
+</button>
 
 </template>
 
@@ -37,6 +39,7 @@ button.text{
     background: none;
     border: none;
     border-radius: 0px;
+    color: #333;
 }
 button.text:hover{
     box-shadow: 0 1px 0 #333;
